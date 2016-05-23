@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "node --debug ./bin/www"
+    "dev": "node --debug ./bin/www",
+    "test": "mocha --recursive ./test"
+
   },
   "dependencies": {
     "body-parser": "~1.13.2",

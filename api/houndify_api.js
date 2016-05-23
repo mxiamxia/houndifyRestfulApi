@@ -62,7 +62,7 @@ var sendRequest = function(uid, text, header, callback) {
                     if (!_.isEmpty(result.AllResults[0].WrittenResponseLong)) {
                         if(!_.isEmpty(result.AllResults[0].ConversationState)) {
                             if(!_.isEmpty(uid)) {
-                                cache.set(uid, result.AllResults[0].ConversationState);
+                                cache.set(uid, result.AllResults[0].ConversationState, config.redis_expire);
                             }
                         }
                         callback(null, result)
