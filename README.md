@@ -18,14 +18,3 @@ forever stop <pid>
 ```
 
 
-
-git init
-git add *
-git commit -m "initial commit"
-git remote add origin ssh://gitadmin@192.168.254.196/co-houndify
-or 
-git remote set-url origin ssh://gitadmin@192.168.254.196/co-houndify
-git push -u origin master
-
-
-git remote set-url origin https://github.com/mxiamxia/houndifyRestfulApi.git
