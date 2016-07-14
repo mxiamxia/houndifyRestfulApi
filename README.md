@@ -41,3 +41,5 @@ git remote add origin ssh://gitadmin@192.168.254.196/co-houndify
 or 
 git remote set-url origin ssh://gitadmin@192.168.254.196/co-houndify
 git push -u origin master
+
+istanbul cover _mocha --recursive test/*

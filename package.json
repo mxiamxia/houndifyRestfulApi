@@ -6,7 +6,6 @@
     "start": "node ./bin/www",
     "dev": "node --debug ./bin/www",
     "test": "mocha --recursive ./test"
-
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -25,5 +24,8 @@
     "serve-favicon": "~2.3.0",
     "should": "^8.3.2",
     "supertest": "^1.2.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^1.3.5"
   }
 }

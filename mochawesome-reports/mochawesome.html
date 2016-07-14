@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">co-houndify</h1>
+          <h3 class="report-date">Thursday, July 14 2016, 03:56pm</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">947<span>MS</span></li>
+              <li class="qs-item summary-suites" title="Suites">1</li>
+              <li class="qs-item summary-tests" title="Tests">3</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">3</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">947<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Suite</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">3</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">3</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="6b52faeb-8809-4550-b048-0689aad3a0d5" class="suite has-tests has-passed">
+            <h3 class="suite-title">test/router/houndifyController.test.js</h3>
+            <h5 class="suite-filename">/test/controller/houndify.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="6b52faeb-8809-4550-b048-0689aad3a0d5" class="suite-chart" width="50" height="50" data-total-passes="3" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">924 ms</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">3</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#6b52faeb-8809-4550-b048-0689aad3a0d5-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="6b52faeb-8809-4550-b048-0689aad3a0d5-test-list" class="list-group test-list collapse in">
+                    <div id="b2ae7257-63fc-4cb8-b88e-d6faf2e76068" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should success with parms of ?query and ?userid
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b2ae7257-63fc-4cb8-b88e-d6faf2e76068 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">479 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(<span class="hljs-string">'/houndify?query=hi&amp;userid=min'</span>)<br>.end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>    should.not.exists(err);<br>    res.status.should.equal(<span class="hljs-number">200</span>);<br>    should.exist(res.body.AllResults[<span class="hljs-number">0</span>].WrittenResponseLong);<br>    done();<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="741489a1-18bf-4e2c-a946-9e738f93dac0" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should success with only parm ?query 
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#741489a1-18bf-4e2c-a946-9e738f93dac0 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">434 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(<span class="hljs-string">'/houndify?query=hi'</span>)<br>    .end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>        should.not.exists(err);<br>        res.status.should.equal(<span class="hljs-number">200</span>);<br>        should.exist(res.body.AllResults[<span class="hljs-number">0</span>].WrittenResponseLong);<br>        done();<br>    });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="a907846e-79aa-4d58-8b9e-9fbc5175189e" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              should fail without ?query 
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a907846e-79aa-4d58-8b9e-9fbc5175189e > .test-code.collapse">Code</button>
+              <span class="test-duration fast">11 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">request.get(<span class="hljs-string">'/houndify?ask=hi'</span>)<br>    .end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{<br>        res.statusCode.should.equal(<span class="hljs-number">500</span>);<br>        should.not.exist(res.body.AllResults);<br>        done();<br>    });</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>

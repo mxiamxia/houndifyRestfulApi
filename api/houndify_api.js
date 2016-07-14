@@ -21,7 +21,7 @@ var queryHoundify = function (text, uid, callback) {
         cache.get(uid, function (err, conversateState) {
             if (err) {
                 requestInfoJson.UserID = uid;
-                header['Hound-Request-Info'] = JSON.stringify(requestInfoJson)
+                header['Hound-Request-Info'] = JSON.stringify(requestInfoJson);
                 sendRequest(uid, text, header, callback);
                 return;
             }

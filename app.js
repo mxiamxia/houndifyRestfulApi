@@ -28,6 +28,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/houndify', apiHoundify);
+//app.use('/houndify/v1', restHoundify);
 app.use('/', index);
 
 
